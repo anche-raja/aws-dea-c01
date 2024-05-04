@@ -1,23 +1,25 @@
 **Domain 1: Data Ingestion and Transformation**
-Task Statement 1.1: Perform data ingestion.
-Knowledge of:
-• Throughput and latency characteristics for AWS services that ingest data
-• Data ingestion patterns (for example, frequency and data history)
-• Streaming data ingestion
-• Batch data ingestion (for example, scheduled ingestion, event-driven
-ingestion)
-• Replayability of data ingestion pipelines
-• Stateful and stateless data transactions
-Skills in:
-• Reading data from streaming sources (for example, Amazon Kinesis,
-Amazon Managed Streaming for Apache Kafka [Amazon MSK], Amazon
-DynamoDB Streams, AWS Database Migration Service [AWS DMS], AWS
-Glue, Amazon Redshift)
-• Reading data from batch sources (for example, Amazon S3, AWS Glue,
-Amazon EMR, AWS DMS, Amazon Redshift, AWS Lambda, Amazon
-AppFlow)
-• Implementing appropriate configuration options for batch ingestion
-• Consuming data APIs
+
+_Task Statement 1.1: Perform data ingestion._
+
+    Knowledge of:
+    • Throughput and latency characteristics for AWS services that ingest data
+    • Data ingestion patterns (for example, frequency and data history)
+    • Streaming data ingestion
+    • Batch data ingestion (for example, scheduled ingestion, event-driven
+    ingestion)
+    • Replayability of data ingestion pipelines
+    • Stateful and stateless data transactions
+    Skills in:
+    • Reading data from streaming sources (for example, Amazon Kinesis,
+    Amazon Managed Streaming for Apache Kafka [Amazon MSK], Amazon
+    DynamoDB Streams, AWS Database Migration Service [AWS DMS], AWS
+    Glue, Amazon Redshift)
+    • Reading data from batch sources (for example, Amazon S3, AWS Glue,
+    Amazon EMR, AWS DMS, Amazon Redshift, AWS Lambda, Amazon
+    AppFlow)
+    • Implementing appropriate configuration options for batch ingestion
+    • Consuming data APIs
 
     • Setting up schedulers by using Amazon EventBridge, Apache Airflow, or
         time-based schedules for jobs and crawlers
