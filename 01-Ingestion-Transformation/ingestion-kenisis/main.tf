@@ -1,5 +1,17 @@
-provider "aws" {
-  region = "us-east-1" # Update with your desired AWS region
+terraform {
+  required_version = ">= 1.0.0"
+  required_providers {
+    aws = {
+      version = ">= 4.0.0"
+      source  = "hashicorp/aws"
+    }
+  }
+  backend "s3" {
+    bucket = "tf-state-ancher"
+    key    = "tf-state-ancher-ingestion/terraform.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "tf-state-ancher"
+  }
 }
 
 # Create Kinesis Data Stream
