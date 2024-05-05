@@ -5,7 +5,15 @@ import time
 
 
 def put_records_into_kinesis(stream_name, records):
-    kinesis = boto3.client('kinesis')
+    # Create an instance of the Kinesis client with your AWS credentials
+    aws_access_key_id = 'YOUR_ACCESS_KEY_ID'
+    aws_secret_access_key = 'YOUR_SECRET_ACCESS_KEY'
+    aws_region = 'us-east-1'  # Update with your AWS region
+
+    kinesis = boto3.client('kinesis',
+                           aws_access_key_id=aws_access_key_id,
+                           aws_secret_access_key=aws_secret_access_key,
+                           region_name=aws_region)
 
     for record in records:
         response = kinesis.put_record(
